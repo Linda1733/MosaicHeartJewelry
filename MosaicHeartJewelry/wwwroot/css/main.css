@@ -1,15 +1,9 @@
 ﻿
 * {
-    padding: 0; 
-    margin: 0;
+   margin: 0;
+   padding: 0;
+    
 }
-
-
-html {
-    background-color: bisque;
-}
-
-
 /******************************* LAYOUT PAGE  SETTINGS **************************/
 /*************** GENERAL SETTINGS ***********/
 body {
@@ -21,8 +15,9 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
-    
+    grid-template-rows: 1fr auto;
 }
+
 
 .container {
     width: 90%;
@@ -30,6 +25,7 @@ body {
     overflow: hidden;
     padding: 15px;
 }
+
 
 /* BRANDING */
 .word-spacing {
@@ -46,25 +42,14 @@ body {
 /******************** HEADER */
 header {
     grid-area: header;
-    /* 
-    background-color: #95A5A6;
-    color: #E74C3C; 
-    border-bottom: #E74C3C 2px solid;
-    color: #fa8072;     */
-    background-color: transparent;
-    color: black;
-    border-bottom: #873213 solid 1px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    font-weight: bolder;
+  
 }
 
     header a {
         color: black;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: .90em;    
-        font-weight: bolder;
+        font-size: .90em;
     }
 
     header li {
@@ -77,7 +62,7 @@ header {
     }
 
     header h1 {
-        padding-left: 30px;
+        margin: 0;
     }
 
     header nav {
@@ -86,10 +71,12 @@ header {
 
 nav {
     float: right;
+    font-weight: bolder;
+    color: #1b1d21;
 }
 
 header a:hover {
-    color: slategray;
+    color: #353a42;
 }
 
 
@@ -98,31 +85,9 @@ header a:hover {
     grid-template: main;
 }
 
-.page-style {
-    text-align: center;
-}
-
-.page-style a {
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bolder;
-    font-size: 1.10em;
-}
-
-.padding a:visited {
-    color: black;
-}
-
-.padding a:hover {
-    color: #873213;
-}
 /****************** FOOTER */
 footer {
-    grid-template: footer;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    grid-template: footer;   
     text-align: center;
     background-color: #873213;
     color: #fff;
@@ -131,8 +96,8 @@ footer {
 }
 
 footer p {
-        padding-top: 15px;
-    }
+    padding-top: 15px;
+}
 
 
 /******************************* INDEX PAGE SETTINGS **************************/
@@ -140,33 +105,10 @@ footer p {
     background-image: url('../images/MosaicHeartJewelry.jpg');
     background-color: #ccc;
     width: 100%;
+    height: 92vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-
-
-/******************************* JEWELRY PAGE SETTINGS **************************/
-#MainDiv {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    height: 500px;
-    width: 100%;
-    padding: 10px;
-    border: solid thin black;
-    font-size: 18pt;
-    background-color: gray;
-}
-
-th {
-    color: black;
-    text-align: left;
-    padding: 15px 25px 5px 25px;
-}
-
-td {
-    color: white;
-    padding: 15px 25px 5px 25px;
-}

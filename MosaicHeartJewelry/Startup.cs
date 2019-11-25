@@ -40,9 +40,14 @@ namespace MosaicHeartJewelry
                 app.UseDeveloperExceptionPage();
                 app.UseStatusCodePages();
                 app.UseStaticFiles();
-                app.UseMvc(route =>
+                app.UseMvc(routes =>
                 {
-                    route.MapRoute(
+                    routes.MapRoute(
+                        name: "pagination",
+                        template: "Products/Page{productPage}", 
+                        defaults: new {controller = "Product", action = "List" });
+                    
+                    routes.MapRoute(
                         name: "default",
                         template: "{controller=Home}/{action=Index}/{id?}");
                 });

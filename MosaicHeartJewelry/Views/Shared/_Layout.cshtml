@@ -9,16 +9,13 @@
 </head>
 <body class="grid-container">
     <header>
-        <div class="container">
-            <h1>Mosaic Heart Jewelry</h1>
-            <nav>
-                <ul>
-                    <li><a asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Product" asp-action="List">Jewelry</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <h1>Mosaic Heart Jewelry</h1>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Product" asp-action="List">Jewelry</a></li>
+            </ul>
+        </nav>        
     </header>
     <div class="content">
         @RenderBody()
