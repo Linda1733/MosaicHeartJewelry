@@ -1,13 +1,30 @@
 ﻿<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Mosaic Heart Jewelry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
 </head>
-<body>
-    <div>
+<body class="grid-container">
+    <header>
+        <div class="container">
+            <h1>Mosaic Heart Jewelry</h1>
+            <nav>
+                <ul>
+                    <li><a asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Product" asp-action="List">Jewelry</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="content">
         @RenderBody()
     </div>
+    <footer>
+        <p>&copy;Copyright @DateTime.Now.Year  |  MOSAIC HEART JEWELRY</p>
+    </footer>
 </body>
 </html>

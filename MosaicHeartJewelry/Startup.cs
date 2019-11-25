@@ -44,7 +44,7 @@ namespace MosaicHeartJewelry
                 {
                     route.MapRoute(
                         name: "default",
-                        template: "{controller=Product}/{action=List}/{id?}");
+                        template: "{controller=Home}/{action=Index}/{id?}");
                 });
 
                 SeedData.EnsurePopulated(app);

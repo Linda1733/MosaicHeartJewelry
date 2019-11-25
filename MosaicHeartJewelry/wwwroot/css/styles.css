@@ -1,0 +1,132 @@
+﻿
+html {
+    height: 100vh;
+}
+/******************************* LAYOUT PAGE  SETTINGS **************************/
+/*************** GENERAL SETTINGS ***********/
+body {
+    margin: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 1.5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* BRANDING */
+.word-spacing {
+    word-spacing: .10em;
+    letter-spacing: .01em;
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+
+/******************** HEADER */
+header {
+    grid-area: header;
+    background: #35424a;
+    color: #fff;
+    padding-top: 10px;
+    border-bottom: #e8491d 2px solid;
+}
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .90em;
+    }
+
+    header li {
+        display: inline;
+        padding: 0 20px;
+    }
+
+    header #branding {
+        float: left;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header nav {
+        margin-top: 0px;
+    }
+
+nav {
+    float: right;
+}
+
+header a:hover {
+    color: #f03311;
+}
+
+
+/****************** CONTENT*/
+.content {
+    grid-template: main;
+}
+
+/****************** FOOTER */
+footer {
+    grid-template: footer;
+    text-align: center;
+    background: #35424a;
+    color: #fff;
+    border-top: #e8491d 3px solid;
+    font-size: .90em;
+}
+
+
+/******************************* INDEX PAGE SETTINGS **************************/
+.background {
+    background-image: url('../images/_MosaicHeartJewelry.jpg');
+    background-color: #ccc;
+    height: 570px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/******************************* TRAIL PAGE SETTINGS **************************/
+#MainDiv {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+    border: solid thin black;
+    font-size: 18pt;
+    background-color: gray;
+}
+
+th {
+    color: black;
+    text-align: left;
+    padding: 15px 25px 5px 25px;
+}
+
+td {
+    color: white;
+    padding: 15px 25px 5px 25px;
+}
